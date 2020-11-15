@@ -1,5 +1,5 @@
 import sys
-from setuptools import pkg_resources
+from setuptools import pkg_resources.resource_stream
 
 class EngDict():
     """ English Dictionary object
@@ -10,7 +10,7 @@ class EngDict():
             Defaulted to the file 'dictionary.txt' included in the package.
         """
         self.d = dict()
-        try: file = pkg_resources.resource_stream(__name__, file_name)
+        try: file = resource_stream(__name__, file_name)
         except FileNotFoundError as e:
             print('File not found')
             sys.exit(0)
