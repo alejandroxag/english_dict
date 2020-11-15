@@ -1,3 +1,6 @@
+import sys
+from setuptools import pkg_resources
+
 class EngDict():
     """ English Dictionary object
     """
@@ -6,7 +9,6 @@ class EngDict():
             :param file_name: File to retrieve from the words definitions.
             Defaulted to the file 'dictionary.txt' included in the package.
         """
-        import sys
         self.d = dict()
         try: file = pkg_resources.resource_stream(__name__, file_name)
         except FileNotFoundError as e:
