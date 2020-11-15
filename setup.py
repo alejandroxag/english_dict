@@ -9,7 +9,7 @@ setup(
     # Needed to actually package something
     packages=['english_dict'],
     # Needed for dependencies
-    install_requires=['pkg_resources', 'sys'],
+    install_requires=[],
     # *strongly* suggested for sharing
     version='0.1',
     # The license can be anything you like
