@@ -1,5 +1,3 @@
-import pkg_resources
-
 class EngDict():
     """ English Dictionary object
     """
